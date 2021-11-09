@@ -14,4 +14,14 @@ public class GameUI : MonoBehaviour
         Menu.SetActive(false);
         movement.enabled = true;
     }
+    public void Update() {
+        if(Input.GetKeyDown(KeyCode.Escape) && !Menu.activeSelf){
+            MenuOn();
+        }
+        else{
+            if(Input.GetKeyDown(KeyCode.Escape) && Menu.activeSelf){
+                MenuOff();
+            }
+        }
+    }
 }
