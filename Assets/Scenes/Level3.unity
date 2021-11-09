@@ -4375,8 +4375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e391b0ab0bc5e224fb6cfb80d363b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 1998115951}
   rb: {fileID: 752249216}
-  speed_w: 5000
+  forward: 4000
+  diff: 0
   speed_b: 45
 --- !u!114 &752249222
 MonoBehaviour:
@@ -11619,6 +11621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
+  defaultDifficalty: 1
+  difficalty: 0
   maxLevel: 3
 --- !u!114 &1998115952
 MonoBehaviour:

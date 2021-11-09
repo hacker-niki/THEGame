@@ -3,14 +3,16 @@ using UnityEngine;
 public class playermovement : MonoBehaviour
 {
 
+    public PlayerData playerData;
     public Rigidbody rb;
-    public float speed_w = 1000f; //speed
+    public float diff;
     public float speed_b = 600f;
-
+    float force;
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, speed_w * Time.deltaTime);
+        force = playerData.forward;
+        rb.AddForce(0, 0, force * Time.deltaTime);
         
         if (Input.GetKey("a"))
         {

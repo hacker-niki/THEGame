@@ -733,8 +733,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e391b0ab0bc5e224fb6cfb80d363b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 1998115951}
   rb: {fileID: 752249216}
-  speed_w: 5000
+  forward: 5000
+  diff: 0
   speed_b: 45
 --- !u!114 &752249222
 MonoBehaviour:
@@ -3397,6 +3399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
+  defaultDifficalty: 1
+  difficalty: 0
   maxLevel: 3
 --- !u!114 &1998115952
 MonoBehaviour:
@@ -3905,6 +3909,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3654684299004300649, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654684299004300649, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
+      propertyPath: m_Mass
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654684299004300649, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654684299004300649, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654684299004300649, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654684299004300652, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
+      propertyPath: forward
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 3654684299004300653, guid: bd8216c9be04bcd4e83d09294dd12595, type: 3}
       propertyPath: m_RootOrder
       value: 3
