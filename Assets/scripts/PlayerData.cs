@@ -9,7 +9,7 @@ public class PlayerData : MonoBehaviour
 
     public float defaultDifficalty = 1;
     public float difficalty;
-    public float forward = 4000f;
+    public float forward = 4800f;
     public int maxLevel = 3;
     void Start(){                                //загрузка данных пользователя в начале игры
         level = PlayerPrefs.GetInt("level");
@@ -22,7 +22,7 @@ public class PlayerData : MonoBehaviour
             forward = 3000f;
         }
         if(difficalty == 1){
-            forward = 4800f;
+            forward = 6300f;
         }
     }
     public void SaveData(){                      //сохранить информацию пользователя(после того, как уровень пройден)
