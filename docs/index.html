@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141324">
+  <meta name="description" content="THEGame — аркадный 3D-раннер. Два кубка и трассы по ритму твоей музыки. Играй в браузере на телефоне или скачай для Android, Windows и Linux.">
+  <title>THEGame — аркадный 3D-раннер</title>
+  <link rel="preload" href="./type/Roboto-BlackItalic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="topbar">
+    <nav class="nav shell" aria-label="Основная навигация">
+      <a class="brand" href="#top" aria-label="THEGame, к началу страницы">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>THE<span>GAME</span>
+      </a>
+      <div class="nav-links">
+        <a href="#music">Музыка</a>
+        <a href="#tracks">Трассы</a>
+        <a href="#controls">Управление</a>
+        <a class="repo" href="https://github.com/hacker-niki/THEGame">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <img class="cover" src="./media/cover.webp" alt="" fetchpriority="high">
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <h1 id="title" aria-label="THEGame">
+            <span class="hero-the">THE <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span></span>
+            <span class="hero-game">GAME</span>
+          </h1>
+          <p class="intro">Преврати свою музыку в трассу. Веди куб двумя пальцами или испытай себя в десяти заездах кампании.</p>
+          <a class="play" href="./play/"><span class="triangle" aria-hidden="true"></span>Играть в браузере<span class="arrow" aria-hidden="true">→</span></a>
+          <div class="downloads" aria-label="Скачать игру">
+            <span>Скачать</span>
+            <a href="https://github.com/hacker-niki/THEGame/releases/download/v2.0.0/THEGame-2.0.0-android.apk">Android <span aria-hidden="true">↓</span></a>
+            <a href="https://github.com/hacker-niki/THEGame/releases/download/v2.0.0/THEGame-2.0.0-windows-x86_64.zip">Windows <span aria-hidden="true">↓</span></a>
+            <a href="https://github.com/hacker-niki/THEGame/releases/download/v2.0.0/THEGame-2.0.0-linux-x86_64.zip">Linux <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="music-band" aria-labelledby="music-title">
+      <div class="music-inner shell">
+        <div>
+          <h2 id="music-title">Музыкальная<br><em>трасса</em></h2>
+          <p>Ударные задают препятствия, энергия фразы меняет ширину дороги. Выбери демо или композицию на телефоне. Игра разбирает звук прямо на устройстве.</p>
+          <p class="file-formats">MP3, Ogg Vorbis или WAV · от 6 секунд до 10 минут · до 64 МиБ</p>
+        </div>
+        <a class="phone-shot" href="./media/mobile-music.webp" aria-label="Открыть портретный кадр музыкальной трассы"><img src="./media/mobile-music.webp" loading="lazy" width="390" height="844" alt="Заезд «После заката» с двумя сенсорными стрелками"></a>
+      </div>
+    </section>
+
+    <section id="tracks" class="tracks shell" aria-labelledby="tracks-title">
+      <div class="section-title">
+        <h2 id="tracks-title">Два кубка.<br><em>Десять трасс.</em></h2>
+        <p>В «Классике» — пять трасс из&nbsp;оригинальной игры. В&nbsp;кубке «Новые трассы» дорога раздваивается и&nbsp;сужается до&nbsp;моста. Начни с&nbsp;любого кубка. Каждый финиш открывает следующую трассу.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <a class="frame" href="./media/classic.webp" aria-label="Открыть кадр классической трассы"><img src="./media/classic.webp" loading="lazy" width="1280" height="720" alt="Препятствия на горной трассе в классическом кубке"></a>
+          <figcaption>Классика</figcaption>
+        </figure>
+        <figure>
+          <a class="frame" href="./media/ice.webp" aria-label="Открыть кадр трассы Ледяной мост"><img src="./media/ice.webp" loading="lazy" width="1280" height="720" alt="Заезд на трассе Ледяной мост"></a>
+          <figcaption>Ледяной мост</figcaption>
+        </figure>
+        <figure>
+          <a class="frame" href="./media/night.webp" aria-label="Открыть кадр трассы Ночной разлом"><img src="./media/night.webp" loading="lazy" width="1280" height="720" alt="Заезд на трассе Ночной разлом"></a>
+          <figcaption>Ночной разлом</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="controls" class="manual" aria-labelledby="controls-title">
+      <div class="manual-inner shell">
+        <div class="manual-copy">
+          <h2 id="controls-title">Управление</h2>
+          <p>Тормози перед узким проходом и&nbsp;отпускай тормоз на&nbsp;прямой. На&nbsp;сенсорном экране рули стрелками слева, а&nbsp;тормози кнопкой справа.</p>
+          <p>В&nbsp;настройках есть три уровня скорости. Лучшее время на&nbsp;каждой сложности сохраняется отдельно.</p>
+        </div>
+        <div class="bindings">
+          <table>
+            <thead><tr><th scope="col">Действие</th><th scope="col">Клавиатура</th><th scope="col">Геймпад</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Рулить</th><td><kbd>A</kbd> <kbd>D</kbd><span class="or"> / </span><kbd>←</kbd> <kbd>→</kbd></td><td>Левый стик, крестовина</td></tr>
+              <tr><th scope="row">Тормоз</th><td><kbd>Пробел</kbd><span class="or"> / </span><kbd>S</kbd></td><td>LT / L2</td></tr>
+              <tr><th scope="row">Пауза</th><td><kbd>Esc</kbd><span class="or"> / </span><kbd>P</kbd></td><td>Start / Options</td></tr>
+              <tr><th scope="row">Повтор</th><td><kbd>R</kbd></td><td>Y / △</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <span>THEGame <span class="footer-divider">/</span> <a href="https://github.com/hacker-niki/THEGame">hacker-niki</a></span>
+    <a href="https://github.com/hacker-niki/THEGame/releases/tag/v2.0.0">Релиз v2.0.0&nbsp; ↗</a>
+  </footer>
+</body>
+</html>

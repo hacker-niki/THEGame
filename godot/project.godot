@@ -1,0 +1,65 @@
+; THEGame • native Godot port
+config_version=5
+
+[application]
+
+config/name="THEGame"
+config/quit_on_go_back=false
+config/description="Аркадный 3D-раннер. Два чемпионата, десять трасс."
+config/version="2.0.0"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://assets/icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/handheld/orientation=6
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+anti_aliasing/quality/msaa_3d=1
+environment/defaults/default_clear_color=Color(0.16,0.10,0.25,1)
+
+[physics]
+
+common/physics_ticks_per_second=60
+3d/physics_engine="GodotPhysics3D"
+
+[layer_names]
+
+3d_physics/layer_1="Road"
+3d_physics/layer_2="Obstacles"
+3d_physics/layer_3="Runner"
+
+[input]
+
+steer_left={
+"deadzone": 0.18,
+"events": [Object(InputEventKey,"physical_keycode":65), Object(InputEventKey,"keycode":4194319), Object(InputEventJoypadMotion,"axis":0,"axis_value":-1.0), Object(InputEventJoypadButton,"button_index":13)]
+}
+steer_right={
+"deadzone": 0.18,
+"events": [Object(InputEventKey,"physical_keycode":68), Object(InputEventKey,"keycode":4194321), Object(InputEventJoypadMotion,"axis":0,"axis_value":1.0), Object(InputEventJoypadButton,"button_index":14)]
+}
+pause_run={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":4194305), Object(InputEventKey,"physical_keycode":80), Object(InputEventJoypadButton,"button_index":6)]
+}
+retry_run={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":82), Object(InputEventJoypadButton,"button_index":3)]
+}
+brake_run={
+"deadzone": 0.12,
+"events": [Object(InputEventKey,"physical_keycode":32), Object(InputEventKey,"physical_keycode":83), Object(InputEventKey,"keycode":4194322), Object(InputEventJoypadMotion,"axis":4,"axis_value":1.0)]
+}

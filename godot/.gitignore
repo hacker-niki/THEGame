@@ -1,0 +1,6 @@
+.godot/
+dist/
+.signing/
+export_credentials.cfg
+*.keystore
+*.jks
